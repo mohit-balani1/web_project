@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Peddana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Raleway&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*****************************
+        NAVBAR SECTION
+*****************************/
+nav{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    background: #FFF;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,.1);
+}
+
+.logo-container{
+    margin-bottom: 0;
+}
+
+.logo-container img{
+    width: 80px;
+    height: 80px;
+}
+
+.lists-container{
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.lists-container__item{
+    line-height: 80px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.lists-container__item::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    opacity: 0;
+    transition: all .3s ease;
+    background-color: #E76F51;
+}
+
+.lists-container__item:hover::after{
+    transform: translateY(-20px);
+    opacity: 1;
+}
+
+.lists-container__item a{
+    text-decoration: none;
+    color: #E76F51;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Peddana', serif; */
+}
+/***************************************
+        HEADER SHOWCASE SECTION
+***************************************/
+.background-container{
+    position: relative;
+    background: url(assets/background.jpg) center center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 81px);
+}
+
+.background-overlay{
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:rgba(0,0,0,.7);
+}
+
+h1.title{
+    font-size:60px;
+    color: #FFF;
+    font-family: 'Bigelow Rules', cursive;
+    /* font-family: 'Raleway', sans-serif; */
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+h2.subtitle{
+    text-align: center;
+    font-size: 2.5rem;
+    color: #F4A261;
+    margin-top: 10px;
+    /* font-family: 'Bigelow rules',cursive; */
+    font-family: 'Raleway', sans-serif;
+}
+.background-overlay p{
+    color: #FFF;
+    font-family: 'Open sans',seri;
+    margin-top: 60px;
+    font-size: 20px;
+    text-align: justify;
+    padding: 0 2rem;
+}
+.btn-regular{
+    padding:10px 16px;
+    background: transparent;
+    transition: all .3s ease;
+    color: #F4A261;
+    border-radius: 6px;
+    border: solid 1px #F4A261;
+    margin: 60px auto;
+    font-family: 'Open sans',serif;
+}
+.btn-regular:hover{
+    background-color: #F4A261;
+    color: #FFF;
+}
+
+
+
+
+
+
+
+/* cuisine */
+
+#cuisines{
+  text-align: center;
+  background-color:  #f0f0f0;
+
+}
+.cuisine_img{
+  border-radius : 100%;
+  padding: 2%;
+}
+.cuisine_div{
+   width: 85%;
+   padding: 2%;
+   margin-left: 3%;
+   
+}
+
+/*trending */
+
+#trending{
+    text-align: left;
+    width:85%;
+    padding: 5%;
+    margin: auto;
+}
+
+#ingredient{
+widows: 85%;
+padding: 5% ;
+text-align: left;
+margin: auto;
+}
+
+/*testimonials*/
+#testimonials{
+    padding: 10%;
+    background-color: #ff914d;
+}
+
+
+/*contact*/
+#contact{
+    padding: 5%;
+
+    text-align: center;
+ 
+}
+.conc{
+
+    padding-left:2%;
+
+}
